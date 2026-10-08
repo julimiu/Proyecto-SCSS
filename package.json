@@ -1,0 +1,25 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/julimiu/CRUD#readme",
+  "bugs": {
+    "url": "https://github.com/julimiu/CRUD/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julimiu/CRUD.git"
+  },
+  "license": "ISC",
+  "author": "Juli Rodriguez",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.105.1"
+  }
+}
