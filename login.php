@@ -5,7 +5,7 @@
     // require './db/obtenerUsuarios.php';
 
     $usuarios = obtener_usuarios();
-    $addUser= obtener_usuarios();
+  
     if (isset($_POST['agregar'])){
         $userForm = $_POST['name-form'];
         $pwForm =$_POST['pw-form'];
@@ -45,7 +45,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ejemplo conexion DB</title>
+        <title>Proyecto</title>
     </head>
     <body>
 

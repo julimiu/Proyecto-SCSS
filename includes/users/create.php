@@ -1,5 +1,6 @@
 <?php
 
+$addUser= obtener_usuarios();
 
 function obtener_usuarios (){
 

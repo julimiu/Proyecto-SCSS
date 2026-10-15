@@ -3,7 +3,7 @@
 function validarSession (){
     session_start();
     if (!isset($_SESSION['nombre'])) {
-        header ("Location: ../index.php");
+        header ("Location: ../login.php");
     }
 }
 

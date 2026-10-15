@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "Juli Rodriguez",
   "type": "module",
-  "main": "index.js",
+  "main": "login.php",
   "scripts": {
     "dev": "gulp dev"
   },

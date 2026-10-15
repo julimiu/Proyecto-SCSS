@@ -5,7 +5,7 @@ require __DIR__ . '/../includes/users/create.php';
 session_start();
 
 if (!isset($_SESSION['nombre'])) {
-    header("Location: ../index.php");
+    header("Location: ../login.php");
     exit; 
 }
 
@@ -19,6 +19,11 @@ $usuarios = obtener_usuarios();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuarios</title>
+
+    <h1>Usuarios </h1>
+
+    <a href="../form/formUsuarios.php">Nuevo usuario</a>
+
     <link rel="stylesheet" href="../build/css/app.css">
 </head>
 <body>
@@ -64,8 +69,9 @@ while ($user = $usuarios->fetch_assoc()) {
 
 </tbody>
 </table>
+<br>
 <?php
-echo '<a href = "dashboard.php">Volver al panel principal </a>';
+echo '<a href = "dashboard.php">Ir al panel principal</a>';
 ?>
 <script> 
 function  confirmar(){
