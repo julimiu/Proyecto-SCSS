@@ -13,7 +13,6 @@
         $pwDB = "";
 
     
-        // $query = "SELECT * FROM usuarios WHERE nombre = '{$userForm}';";
         $query = "SELECT * FROM usuarios WHERE nombre = '" . mysqli_real_escape_string($conex, $userForm) . "';";
         $resultado = mysqli_query($conex, $query); 
 
@@ -45,23 +44,32 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="build/css/app.css">
         <title>Proyecto</title>
     </head>
     <body>
 
+    <main class="login">
 
-    <h1>Login</h1>
-    <form action="" method="post">
-    <label for = "name-form">Nombre de Usuario</label>
-    <input type="text" name="name-form">
+        
+    <form class="formulario" action="" method="post">
+        <h1 class="login-titulo">Login</h1>
 
-    <label for = "pw-form">Contraseña</label>
-    <input type="password" name="pw-form">
+    <div class="campo">
+        <label for = "name-form">Nombre de Usuario</label>
+        <input type="text" name="name-form">
+    </div>
 
-    <input type="submit" value="Enviar" name="agregar"> 
+    <div class="campo">
+        <label for = "pw-form">Contraseña</label>
+        <input type="password" name="pw-form">
+    </div>
+
+    <input class="boton" type="submit" value="Enviar" name="agregar"> 
         <!-- <h1>Conexion con My SQL</h1> -->
 
 </form>
+</main>
         <!-- <table>
             <thead>
                 <tr>
@@ -72,17 +80,7 @@
           </thead>
 
         <tbody>
-            // <?php
-            while($user = mysqli_fetch_assoc($usuarios)){
-            //?>
-            <tr>
-                <td><?php echo $user['nombre']; ?></td>
-                <td><?php echo $user['email']; ?></td>
-                <td><?php echo $user['contrasena']?></td>
-            </tr>
-            <?php
-            }
-            ?> 
+           
         </tbody>
     </table> -->
 
