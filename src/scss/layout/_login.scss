@@ -42,7 +42,8 @@
 .formulario {
   width: 100%;
   max-width: 48.5rem;
-  margin: 0;
+  // margin: 0;
+  margin-right: 7rem;
   // box-sizing: border-box;
   padding: 3.5rem 4.3rem; 
   
@@ -56,6 +57,10 @@
   border-radius: 1.6rem;
 
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+
+  // @include m.phone {
+  //   margin-right: 5rem;
+  // }
   
   .login-icono {
     width: 6rem;
